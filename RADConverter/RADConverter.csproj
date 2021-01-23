@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Models\NavMeshForBV.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="BinaryViewerTemplate.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SharpNav">
+      <HintPath>..\libs\SharpNav.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
